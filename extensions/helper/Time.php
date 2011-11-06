@@ -42,15 +42,6 @@ class Time extends \lithium\template\Helper {
 	/**
 	 * Question if supplied date is 'today', 'yesterday', 'this week' etc
 	 *
-	 * Valid questions:
-	 *  - today
-	 *  - yesterday
-	 *  - tomorrow
-	 *  - this week
-	 *  - this month
-	 *  - this year
-	 *  - leap year
-	 *
 	 * @param string $question
 	 * @param mixed $date string|int|null
 	 * @param array $options
@@ -69,15 +60,6 @@ class Time extends \lithium\template\Helper {
 
 	/**
 	 * Convert given date (or current if null) to 'nice', 'short' or 'words' etc
-	 *
-	 * Valid types:
-	 *  - nice
-	 *  - short
-	 *  - words
-	 *  - unix
-	 *  - atom
-	 *  - rss
-	 *  - cookie
 	 *
 	 * @param string $type
 	 * @param mixed $date string|int|null
@@ -278,7 +260,7 @@ class Time extends \lithium\template\Helper {
 	 * @param array $options
 	 * @return array
 	 */
-	private function _diff($date, array $options = array()) {
+	protected function _diff($date, array $options = array()) {
 		$defaults = array('now' => date('Y-m-d'), 'offset' => 0, 'weeks' => true);
 		$options += $defaults;
 
