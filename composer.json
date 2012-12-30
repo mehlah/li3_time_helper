@@ -1,0 +1,15 @@
+{
+    "name": "mehlah/li3_time_helper",
+    "description": "Lithium Date/Time helper.",
+    "type": "lithium-library",
+    "authors": [
+        {
+            "name": "Mehdi Lahmam B.",
+            "email": "mehdi@lahmam.com"
+        }
+    ],
+    "require": {
+        "composer/installers": "*"
+    },
+    "minimum-stability": "dev"
+}
